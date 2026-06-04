@@ -573,18 +573,23 @@ wait(5)
 -----------------------------------------Aba Nome de entrada-----------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------
 
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+
+local Player = Players.LocalPlayer
+
 local RE = ReplicatedStorage:WaitForChild("RE")
 local NameEvent = RE:WaitForChild("1RPNam1eTex1t")
 local ColorEvent = RE:WaitForChild("1RPNam1eColo1r")
 
 -- Nome RP
-NameEvent:FireServer("RolePlayName","SAGAZx HUB")
+NameEvent:FireServer("RolePlayName", "SAGAZx HUB")
 
--- Cor nome
-ColorEvent:FireServer("PickingRPNameColor",Color3.fromRGB(128,86,255))
+-- Cor do Nome
+ColorEvent:FireServer("PickingRPNameColor", Color3.fromRGB(128, 86, 255))
 
 -- Bio
-NameEvent:FireServer("RolePlayBio","BEM-VINDO "..Player.DisplayName)
+NameEvent:FireServer("RolePlayBio", "BEM-VINDO " .. Player.DisplayName)
 
--- Cor Bio
-ColorEvent:FireServer("PickingRPBioColor",Color3.fromRGB(87,191,255))
+-- Cor da Bio
+ColorEvent:FireServer("PickingRPBioColor", Color3.fromRGB(87, 191, 255))
