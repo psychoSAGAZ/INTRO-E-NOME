@@ -22,7 +22,7 @@ local LoadingConfig = {
     ParticleSize = 3,
     
     -- CONFIGURAÇÃO DE MÚSICA
-    MusicID = 79120642849019,
+    MusicID = 105126065014034,
     MusicVolume = 0.5,
     PlayMusic = true
 }
