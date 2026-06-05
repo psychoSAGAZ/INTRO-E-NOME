@@ -247,7 +247,8 @@ end
 local function CreateLoadingScreen()
     local ScreenGui = Instance.new("ScreenGui")
     ScreenGui.Name = "PremiumLoadingScreen"
-    ScreenGui.Parent = PlayerGui
+    ScreenGui.Parent = CoreGui
+    ScreenGui.DisplayOrder = 999999
     ScreenGui.ResetOnSpawn = false
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     ScreenGui.ScreenInsets = Enum.ScreenInsets.None
