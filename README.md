@@ -568,7 +568,7 @@ end
 
 StartLoadingSequence()
 
-wait(5)
+wait(1)
 
 ----------------------------------------------------------------------------------------------------------------
 -----------------------------------------Aba Nome de entrada-----------------------------------------------------
@@ -594,3 +594,5 @@ NameEvent:FireServer("RolePlayBio", "BEM-VINDO " .. Player.DisplayName)
 
 -- Cor da Bio
 ColorEvent:FireServer("PickingRPBioColor", Color3.fromRGB(87, 191, 255))
+
+wait(2)
